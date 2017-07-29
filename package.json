@@ -1,0 +1,25 @@
+{
+  "name": "move-ability-api",
+  "version": "1.0.0",
+  "description": "API supporting the MoveAbility application",
+  "main": "handler.js",
+  "dependencies": {
+    "babel-runtime": "^6.25.0",
+    "pg": "^7.0.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.4.2",
+    "tedious": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "serverless-webpack": "^2.2.0",
+    "webpack": "^2.7.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "author": "The Codefather GovHack 2017 Team",
+  "license": "ISC"
+}
