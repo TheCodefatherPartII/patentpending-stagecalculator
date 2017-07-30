@@ -8,20 +8,16 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'handler.js'
   },
-  externals: ['aws-sdk'],
+  externals: [
+    'aws-sdk',
+    'mysql2',
+    'sqlite3',
+    'pg-native',
+    'formidable',
+  ],
   target: 'node',
   devtool: 'source-map',
-  plugins: [
-    // new webpack.optimize.OccurrenceOrderPlugin(),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     unused: true,
-    //     dead_code: true,
-    //     warnings: false,
-    //     drop_debugger: true
-    //   }
-    // })
-  ],
+  plugins: [],
   module: {
     loaders: [{
       test: /\.js$/,

@@ -1,0 +1,5 @@
+const statusCodes = [2, 4, 6, 7, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29, 30, 31, 35, 37, 39, 41, 99];
+const statusDescription = ['Accepted','Accepted - Awaiting Advertisement','Accepted - Opposition period expired','Cancelled','Expired - Renewal Possible','Filed - Approved','Indexing Approved','Lapsed - Accepted','Lapsed/Not Protected','Linked Registration','Linked/Merged','Opposed','Refused','Registered - Revocation pending','Registered/Protected','Registered/Protected - Renewal Due','Rejected','Removed - Non-Use','Removed - Not Renewed','Subject to a hearing','Taken for Examination','Under Examination - Deferred','Under Examination - Extension Fees Not Required','Under Examination - Extension Fees Required ','Under Examination-General Provisions for Extension', 'Withdrawn'];
+
+export const statusMap = statusCodes.reduce((agg, curr, i) => {agg[curr] = statusDescription[i]; return agg;}, {});
+export const codeMap = statusCodes.reduce((agg, curr, i) => {agg[statusDescription[i]] = curr; return agg;}, {});

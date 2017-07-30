@@ -1,5 +1,7 @@
-import calculateDerivedState from './functions/calculateDerivedState';
+import calculatePatentState from './functions/calculateDerivedPatentState';
+import calculateTrademarkState from './functions/calculateDerivedTrademarkState';
 
 export {
-  calculateDerivedState,
+  calculatePatentState,
+  calculateTrademarkState,
 };
